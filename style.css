@@ -1,0 +1,173 @@
+#bar{
+    display: none;
+    position:absolute ;
+    top: 100px;
+    left:0 ;
+    width:100% ;
+    background: #363535;
+    opacity: 6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.logo {
+    width: 300px;
+    height: 50px;
+    margin-right: 20px;
+}
+.display-4{
+    margin-left: 500px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.lead{
+    margin-left: 500px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#btn {
+    position: relative;
+    top: 110px;
+    margin-left: 500px;
+}
+.error{
+    opacity: 0;
+    background-color: rgb(244, 245, 247);
+    padding: 4px;
+    border-radius: 15px;
+    width: 400px;
+    position: relative;
+    left: 800px;
+    top:110px;
+    animation: fadeIn 5s forwards;
+    animation-delay: 4s;
+}
+.navbar-brand {
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .error{
+        top: 290px;
+        left: 70px;
+        position: fixed;
+    }
+    .loader{
+      margin-top: 50px;
+        left: -750px;
+    }
+    .logo {
+        width: 100px;
+        height: 25px;
+    }
+    .navbar-brand {
+       font-size: larger;
+    }
+    .display-4{
+        
+        margin-left: -10px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    #small{
+        font-size: 40px;
+    }
+    .lead{
+        display: none;
+        color: blue;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    #btn {
+        position: relative;
+        top: 130px;
+        height: 40px;
+        margin-left: -10px;
+    }
+    .mb-4{
+        font-size: small;
+    }
+    #background{
+     
+        height: 200px;
+       background-size: cover;
+       background-image: none ;
+    }
+ 
+}
+#background{  
+    background-image: url("trail3.png");
+    background-repeat: no-repeat;
+}
+.card {
+    transition: transform 0.3s; /* add transition effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* scale up on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* add box shadow on hover */
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    display: none;
+    margin-left: 1000px;
+    position: relative;
+    top: 90px;
+    width: 20px;
+    --b: 8px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 1px;
+    background: conic-gradient(#0000 10%, #676767) content-box;
+    -webkit-mask: repeating-conic-gradient(#0000 0deg, #000 1deg 20deg, #0000 21deg 36deg), radial-gradient(farthest-side, #0000 calc(100% - var(--b) - 1px), #000 calc(100% - var(--b)));
+    -webkit-mask-composite: destination-in;
+    mask-composite: intersect;
+    animation: l4 1s infinite steps(10), fadeOut 5s forwards;
+  }
+  
+  @keyframes l4 {
+    0% {
+      transform: rotate(0turn);
+    }
+    100% {
+        transform: rotate(1turn);
+      }
+    }
+    
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        display: none;
+      }
+    }
+    @keyframes fadeIn {
+        0% {
+          display: block;
+          
+        }
+        50% {
+          opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+      }
+      
+.container{
+    padding: 80px;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+  

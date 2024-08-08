@@ -52,7 +52,7 @@
 @media (max-width: 768px) {
     .error{
         top: 290px;
-        left: 60px;
+        left: 50px;
         position: fixed;
     }
     .loader{

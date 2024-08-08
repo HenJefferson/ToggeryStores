@@ -72,6 +72,7 @@
         font-family: 'Times New Roman', Times, serif;
     }
     #small{
+        padding: 3px;
         font-size: 30px;
     }
     .lead{
